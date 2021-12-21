@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+	<meta charset="utf-8">
+	<title>{{.Title}}</title>
+	<style>
+		body {
+		font-size: 200% ; } 
+	</style>
+</head>
+
+<body id="page-top">
+	<h2>This is _default/baseof.html</h2>
+		{{ block "content" . }}
+		{{ end }}
+	<h2>End of _default/baseof.html</h2>
+    </body>
+</html>

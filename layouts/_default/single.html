@@ -1,0 +1,15 @@
+<h2>This is _default/single.html</h2>
+
+{{ define "content" }}
+
+    {{ with .Content}}
+        <div>
+        {{ . | markdownify }}
+        <hr>
+
+        </div>
+    {{ end }}
+
+
+{{ end }}
+<h2>End of _default/single.html</h2>
